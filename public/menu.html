@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="index.css" />
 
+    <script src="jquery.js"></script>
+    <script src="menu.js"></script>
+
 </head>
 
 <body>
@@ -17,10 +20,39 @@
     </header>
 
     <main class="basic-grid">
-       <div class="card" ><h3>Just a Coffee</h3><p>Brewed with a Chemex</p></div>
-       <div class="card" ><h3>Decaf Drip</h3><p>Nothing fancy</p></div>
-       <div class="card" ><h3>Moka</h3><p>A small, espresso-like coffee</p></div>
-       <div class="card" ><h3>Moka Latte</h3><p>It's a latte</p></div>
+        <div class="card" >
+            <h3>Just a Coffee</h3>
+            <p>Brewed with a Chemex</p>
+            <div class="options" style="display: none;">
+                <button class="cream opt-button" type="button">Room for Cream</button>
+            </div>
+        </div>
+        <div class="card" >
+            <h3>Decaf Drip</h3>
+            <p>Nothing fancy</p>
+            <div class="options" style="display: none;">
+                <button class="cream opt-button" type="button">Room for Cream</button>
+            </div>
+        </div>
+        <div class="card" >
+            <h3>Moka</h3>
+            <p>A small, espresso-like coffee</p>
+        </div>
+        <div class="card" >
+            <h3>Moka Latte</h3>
+            <p>It's a latte</p>
+            <div class="opt-grid">
+                <div class="options" style="display: none;">
+                    <button class="sweetened opt-button" type="button">Sweetened</button>
+                </div>
+                <div class="options" style="display: none;">
+                    <button class="caramel opt-button" type="button">Caramel Syrup</button>
+                </div>
+                <div class="options" style="display: none;">
+                    <button class="vanilla opt-button" type="button">Vanilla Syrup</button>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
